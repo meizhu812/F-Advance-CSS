@@ -22,14 +22,19 @@ ul {
 .top-nav {
   background: #262626;
 }
-.top-links {
+.nav-links {
   height: 64px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-.top-links a {
+.nav-links a {
   text-decoration: none;
   font-weight: bold;
-  color: #aaa;
+  color: #fdfdfd;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
 }
