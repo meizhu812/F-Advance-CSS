@@ -18,3 +18,18 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+.top-nav {
+  background: #262626;
+}
+.top-links {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.top-links a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #aaa;
+}
