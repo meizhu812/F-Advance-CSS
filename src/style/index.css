@@ -7,6 +7,9 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
 }
 
 * {
@@ -21,6 +24,7 @@ ul {
 
 .top-nav {
   background: #262626;
+  min-width: 1280px;
 }
 
 .nav-links {
@@ -33,17 +37,18 @@ ul {
 .nav-links a {
   text-decoration: none;
   font-weight: bold;
-  color: #fdfdfd;
+  color: #eee;
 }
 
 .contents {
-  margin-top: 32px;
+  min-width: 1280px;
+  margin: 32px auto;
   display: flex;
   flex-direction: row;
 }
 
 .left-aside {
-  flex: 0 0 180px;
+  flex: 0 0 160px;
   margin: 0 36px;
 }
 
@@ -61,4 +66,59 @@ ul {
 
 .archive-section h2 {
   font-size: 16px;
+}
+
+.articles {
+  display: flex;
+  height: 800px;
+  flex-flow: column wrap;
+  align-content: space-evenly;
+}
+
+.articles a {
+  text-decoration: none;
+}
+
+.articles > article {
+  width: 48%;
+  margin: 10px 0;
+}
+
+.articles > article:nth-child(2) {
+  order: 3;
+}
+
+.thumbnail-placeholder {
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  vertical-align: center;
+  background-color: #55595c;
+  color: #eee;
+}
+
+.article-description {
+  padding: 16px 16px;
+  border: 1px solid #ccc;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 2px 2px 4px #eee;
+}
+
+.title-link {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+}
+
+.article-title {
+  margin: 0;
+}
+
+.details-link {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.right-aside {
+  flex: 0 0 200px;
 }
