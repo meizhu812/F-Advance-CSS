@@ -119,16 +119,16 @@
         <form class="login-form">
             <label for="email-input">
                 <span hidden>email input</span>
-                <input name="email" id="email-input" type="email" placeholder="Email address">
+                <input name="email" class="text-input" id="email-input" type="email" placeholder="Email address"/>
             </label>
             <label for="password-input">
                 <span hidden>password input</span>
-                <input name="password" id="password-input" type="password" placeholder="Password">
+                <input name="password" class="text-input" id="password-input" type="password" placeholder="Password"/>
             </label>
-            <label>
-                <input type="checkbox">Remember Me
+            <label class="checkbox-text" for="remember-check">
+                <input id="remember-check" type="checkbox"/>Remember Me
             </label>
-            <input type="submit" value="Sign in">
+            <input id="login-btn" type="submit" value="Sign in"/>
         </form>
     </aside>
 </main>
@@ -138,5 +138,4 @@
 </footer>
 <div class="unreachable-area"></div>
 </body>
-
 </html>
