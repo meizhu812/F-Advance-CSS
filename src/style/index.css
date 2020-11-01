@@ -168,7 +168,9 @@ ul {
 }
 
 .footer-area {
+  padding: 16px 0;
   background-color: #f9f9f9;
+  color: #aaa;
   text-align: center;
 }
 
